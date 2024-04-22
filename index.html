@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <h1>Perpustakaan</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Masukan Buku Baru</h2>
+            <form action="" id="inputBook">
+                <div class="input">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="input">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="input">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" required>
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox" onclick="CheckBox()">
+                </div>
+                <button id="submit" name="submit" type="submit">Masukkan Buku Ke rak <b>Belum Selesai
+                        <button id="pinjaman" name="submit" type="submit">Masukkan Buku Ke
+                            Pinjaman
+                            <b>Selesai
+                                dibaca</b></button>
+            </form>
+        </section>
+
+        <section class="search">
+            <h2>Cari Buku</h2>
+            <form action="" id="searchBook">
+                <label for="searchTitle">Judul</label>
+                <input type="text" id="searchTitle">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section class="book">
+            <h2>Rak Buku <b>Belum Selesai Dibaca</b></h2>
+            <div id="incompleteList" class="book_list">
+                <div id="editBook"></div>
+            </div>
+        </section>
+        <section class="book">
+            <h2>Pinjaman</h2>
+            <div id="completeList" class="book_list">
+                <div id="editBook"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

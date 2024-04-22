@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: beige;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  padding: 10px;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px 1px #b9b5b5;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  gap: 5px;
+  background-color: tomato;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.container > form .input {
+  font-weight: bold;
+  margin: 1px 9px;
+}
+
+.container form > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  color: white;
+  gap: 5px;
+  border: 0;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#pinjaman {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  color: white;
+  gap: 5px;
+  border: 0;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#searchSubmit {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+#searchSubmit:hover {
+  background-color: #63b1e4;
+}
+form > .input_inline {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 3px;
+}
+.container > form > button:hover {
+  background-color: #63b1e4;
+  color: #ffff;
+}
+.container > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.search {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px 2px #b9b5b5;
+}
+.search > form {
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search > form > label {
+  display: flex;
+  align-items: center;
+}
+.search > form > input {
+  border-radius: 5px;
+}
+
+.book {
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 1px 2px #b9b5b5;
+}
+
+.book.book_list {
+  padding: 16px;
+}
+
+.book > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  box-shadow: 1px 2px 1px 2px slategray;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book > .book_list > .book_item > .action > button {
+  padding: 5px;
+  margin: 0 10px 0 0;
+  margin-top: 10px;
+}
+
+.book > .book_list > .book_item > .action > .green {
+  width: 30px;
+  height: 30px;
+
+  background: url('./assets/undo-ouline.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.book > .book_list > .book_item > .action > .green-checklist {
+  width: 30px;
+  height: 30px;
+
+  background: url('./assets/check-solid.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.book > .book_list > .book_item > .action > .red {
+  width: 30px;
+  height: 34px;
+
+  background: url('./assets/trash-solid.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.book > .book_list > .book_item > .action > .yellow {
+  width: 30px;
+  height: 30px;
+
+  background: url('./assets/pen-solid.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+#editBook {
+  background-color: #63b1e4;
+}
